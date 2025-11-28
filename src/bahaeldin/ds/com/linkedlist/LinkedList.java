@@ -14,34 +14,31 @@ public class LinkedList {
 		this.length = 1;
 	}
 
-	public Node getHead() {
-		return head;
+	public int getHead() {
+		return head.getValue();
 	}
 
-	public void setHead(Node head) {
-		this.head = head;
-	}
-
-	public Node getTail() {
-		return tail;
-	}
-
-	public void setTail(Node tail) {
-		this.tail = tail;
+	public int getTail() {
+		return tail.getValue();
 	}
 
 	public int getLength() {
 		return length;
 	}
 
-	public void setLength(int length) {
-		this.length = length;
+	public void printList() {
+		Node temp = head;
+		while (temp != null) {
+			System.out.println(temp.getValue());
+			temp = temp.getNext();
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "LinkedList [head=" + head + ", tail=" + tail + ", length=" + length + "]";
+		return "LinkedList [head=" + head.getValue() + ", tail=" + tail.getValue() + ", length=" + length + "]";
 	}
+
 
 
 }
