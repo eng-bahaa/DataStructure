@@ -26,11 +26,11 @@ public class LinkedList {
 		return length;
 	}
 
-	public void lengthIncrement() {
+	private void lengthIncrement() {
 		this.length++;
 	}
 
-	public void lenthDecrement() {
+	private void lenthDecrement() {
 		this.length--;
 	}
 
