@@ -26,6 +26,14 @@ public class LinkedList {
 		return length;
 	}
 
+	public void lengthIncrement() {
+		this.length++;
+	}
+
+	public void lenthDecrement() {
+		this.length--;
+	}
+
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {
