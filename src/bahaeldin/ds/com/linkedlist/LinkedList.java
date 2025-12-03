@@ -15,6 +15,7 @@ public class LinkedList {
 	}
 
 	public int getHead() {
+		lengthIncrement();
 		return head.getValue();
 	}
 
